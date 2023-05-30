@@ -13,7 +13,7 @@
 - [Moongoose](https://mongoosejs.com/) - As ODM for MongoDB.
 
 Some other libraries used for development.
-- [Morgan]([https://github.com/expressjs/morgan](https://github.com/expressjs/morgan#readme)) - For checking the apis while development.
+- [Morgan](https://github.com/expressjs/morgan#readme) - For checking the apis while development.
 - [Nodemon](https://nodemon.io/) - For development pupose.
 
 ## Installation
@@ -41,46 +41,8 @@ npm run dev
 ## Provided endpoints
 
 Here are some screenshots of the project.
-1. api/signup
-
-Successful signup
-<img 
-     src="https://github.com/Ajay-Kr/backend_restapi_sploot/assets/55989070/9674f11e-9390-4b59-adc3-49a8d4fe9f27" 
-     data-canonical-src="https://github.com/Ajay-Kr/backend_restapi_sploot/assets/55989070/9674f11e-9390-4b59-adc3-49a8d4fe9f27" 
-     width="700" align="center"
-/>
-Conflict Error
-<img 
-     src="https://github.com/Ajay-Kr/backend_restapi_sploot/assets/55989070/106af411-ba67-4d4c-a504-a88102ee757e" 
-     data-canonical-src="https://github.com/Ajay-Kr/backend_restapi_sploot/assets/55989070/106af411-ba67-4d4c-a504-a88102ee757e" 
-     width="700" align="center"
-/>
-Password Mismatch
-
-
-On clicking the Run button, if the input is not empty the api is called...
-
-Empty input...
-
-<img 
-     src="https://github.com/Ajay-Kr/sentimentAnalysisNodeJs/assets/55989070/fc45566f-73be-4f45-a337-496fabbd62d4" 
-     data-canonical-src="https://github.com/Ajay-Kr/sentimentAnalysisNodeJs/assets/55989070/fc45566f-73be-4f45-a337-496fabbd62d4" 
-     width="700" align="center"
-/>
-
-Processing...
-
-<img 
-     src="https://github.com/Ajay-Kr/sentimentAnalysisNodeJs/assets/55989070/c51fe0e5-cb17-44dd-b491-23147656f967" 
-     data-canonical-src="https://github.com/Ajay-Kr/sentimentAnalysisNodeJs/assets/55989070/c51fe0e5-cb17-44dd-b491-23147656f967" 
-     width="700" align="center"
-/>
-
-On receiving the result output is shown...
-
-<img 
-     src="https://github.com/Ajay-Kr/sentimentAnalysisNodeJs/assets/55989070/801cefb0-f288-4577-8d5d-66ed759d5f7c"
-     data-canonical-src="https://github.com/Ajay-Kr/sentimentAnalysisNodeJs/assets/55989070/801cefb0-f288-4577-8d5d-66ed759d5f7c"
-     width="700" align="center" 
-/>                
-
+1. api/signup - Route to register the user
+2. api/login - Route to login a user
+3. api/users/:userId - Route to update user profile (name and age).
+4. api/users/:userId/articles - Route to create a new article
+5. api/articles - Route to get all articles 
