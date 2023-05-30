@@ -1,15 +1,11 @@
-###
-GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODU0NTE3NDUsImV4cCI6MTY4NTQ1NTM0NSwiYXVkIjoiNjQ3NWQ4MTdlNTk4Y2ZhMGQzMGY3MjFhIiwiaXNzIjoiYmFja2VuZHJlc3RhcGlzcGxvb3QuY29tIn0.vXL_FqyRmxFe_7CunwRnS446SzldyH-9PrJwOV2LjVA
-
 ### SIGNUP ROUTE
 POST http://localhost:3000/api/signup 
 Content-Type: application/json
 
 {
-  "email": "user4@user.com",
-  "password": "user4",
-  "re_password": "user4"
+  "email": "user9@user.com",
+  "password": "user9",
+  "re_password": "user9"
 }
 
 ### LOGIN ROUTE
@@ -17,38 +13,31 @@ POST http://localhost:3000/api/login
 Content-Type: application/json
 
 {
-  "email": "user2@user.com",
-  "password": "user2"
+  "email": "user5@user.com",
+  "password": "user5"
 }
 
 ### UPDATE USER PROFILE
-PATCH http://localhost:3000/api/users/6475d817e598cfa0d30f721a
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODU0NTE3NDUsImV4cCI6MTY4NTQ1NTM0NSwiYXVkIjoiNjQ3NWQ4MTdlNTk4Y2ZhMGQzMGY3MjFhIiwiaXNzIjoiYmFja2VuZHJlc3RhcGlzcGxvb3QuY29tIn0.vXL_FqyRmxFe_7CunwRnS446SzldyH-9PrJwOV2LjVA
+PATCH http://localhost:3000/api/users/64762560db8b65634143cfb1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODU0NzMxNDQsImV4cCI6MTY4NTQ3Njc0NCwiYXVkIjoiNjQ3NjI1NjBkYjhiNjU2MzQxNDNjZmIxIiwiaXNzIjoiYmFja2VuZHJlc3RhcGlzcGxvb3QuY29tIn0.tAisXNOj_izpO_kP18QpLha1YC3-ICMSaqhg-i0GEt0
 Content-Type: application/json
 
 {
-  "name": "User 1", 
-  "age": 20
+  "name": "User Five", 
+  "age": 5
 }
 
-
-### REFRESH-TOKEN ROUTE
-POST http://localhost:3000/api/refresh-token
-
-### LOGOUT ROUTE
-DELETE http://localhost:3000/api/logout
-
 ### CREATE AN ARTICLE
-POST http://localhost:3000/api/users/6475dafe6b57cdd938192c47/articles
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODU0NTYxNzUsImV4cCI6MTY4NTQ1OTc3NSwiYXVkIjoiNjQ3NWRhZmU2YjU3Y2RkOTM4MTkyYzQ3IiwiaXNzIjoiYmFja2VuZHJlc3RhcGlzcGxvb3QuY29tIn0.DmDOGftIGw1whkFSZ3OkalEU1rAfe5eW6nPE-2hFVyE
+POST http://localhost:3000/api/users/64762560db8b65634143cfb1/articles
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODU0NzA1NzMsImV4cCI6MTY4NTQ3NDE3MywiYXVkIjoiNjQ3NjI1NjBkYjhiNjU2MzQxNDNjZmIxIiwiaXNzIjoiYmFja2VuZHJlc3RhcGlzcGxvb3QuY29tIn0.usFAV9VhhAWP1L82g7uShuS7P8-1XKsVkjS6Kjnp-38
 Content-Type: application/json
 
 {
-  "art": "User 2's third post."
+  "art": "User 5's third article post."
 }
 
 ### GET ALL ARTICLES
 GET http://localhost:3000/api/articles
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODU0NTYxNzUsImV4cCI6MTY4NTQ1OTc3NSwiYXVkIjoiNjQ3NWRhZmU2YjU3Y2RkOTM4MTkyYzQ3IiwiaXNzIjoiYmFja2VuZHJlc3RhcGlzcGxvb3QuY29tIn0.DmDOGftIGw1whkFSZ3OkalEU1rAfe5eW6nPE-2hFVyE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODU0NzA1NzMsImV4cCI6MTY4NTQ3NDE3MywiYXVkIjoiNjQ3NjI1NjBkYjhiNjU2MzQxNDNjZmIxIiwiaXNzIjoiYmFja2VuZHJlc3RhcGlzcGxvb3QuY29tIn0.usFAV9VhhAWP1L82g7uShuS7P8-1XKsVkjS6Kjnp-38
 
 

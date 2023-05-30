@@ -4,23 +4,22 @@ const createError = require('http-errors');
 require('dotenv').config();
 require('./helpers/init_mongodb')();
 
-const AllRoute = require('./Routes/all.route');
-
-const { verifyAccessToken } = require('./helpers/jwt_helper');
-
 const app = express();
 
+// Middlewares
 app.use(morgan('dev'));
 app.use(express.json());
 
-
-app.get('/', verifyAccessToken, async(req, res, next) => {
-  console.log(req.payload);
-  res.send("Hello from exress...");
+// Routes
+app.get('/', async(req, res, next) => {
+  res.send("Backend REST API");
 });
 
-app.use('/api', AllRoute);
+app.use('/api', require('./Routes/Auth.route'));
+app.use('/api/users/', require('./Routes/User.route'));
+app.use('/api/articles', require('./Routes/Article.route'));
 
+// Error Handlers
 app.use(async(req, res, next) => {
   next(createError.NotFound());
 });
